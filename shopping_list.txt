@@ -1,5 +1,5 @@
-Bread
-Eggs
-Milk
-Soda
-Chips
+Bread x 1
+Eggs x 2
+Milk x 3
+Soda x 4
+Chips x 5
