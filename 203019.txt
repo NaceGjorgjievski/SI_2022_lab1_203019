@@ -1,0 +1,105 @@
+git clone https://github.com/NaceGjorgjievski/SI_2022_lab1_203019.git                            го клонира remote репозиториумот
+git add shopping_list.txt									 го додава shopping_list.txt во stage area												   
+git commit -m "Add 5 items to the shopping list"						 правиме commit со порака Add 5 items to the shopping list
+git add shopping_list.txt                                                                        го додава shopping_list.txt во stage area
+git commit -m "Add quantities to the items"							 правиме commit со порака Add quantities to the items
+git branch branch1                                                                               креираме гранка branch1
+git branch branch2										 креираме гранка branch2
+$ git log											 ги листаме сите извршени commit-и
+commit 545315841b6e5dc3973b9c5d08fa3b029978fa6d (HEAD -> master, branch2, branch1)
+Author: Nace Gjorgjievski <nace.gorgievski123@gmail.com>
+Date:   Sun Apr 10 10:49:15 2022 +0200
+
+    Add quantities to the items
+
+commit d9d60cb22d88a8aca7c70e3f0bc1fe93d37a3e5b
+Author: Nace Gjorgjievski <nace.gorgievski123@gmail.com>
+Date:   Sun Apr 10 10:47:07 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit 34e28c0cd42147a071de359531e9da3a54675524 (origin/master, origin/HEAD)
+Author: NaceGjorgjievski <86660866+NaceGjorgjievski@users.noreply.github.com>
+Date:   Sun Apr 10 10:40:19 2022 +0200
+
+    Update README.md
+
+commit 4140f464bdcf8fdac18a5c267bf965338276f82f
+Author: NaceGjorgjievski <86660866+NaceGjorgjievski@users.noreply.github.com>
+Date:   Sun Apr 10 10:39:16 2022 +0200
+
+git push origin master										ја испраќаме гранката мастер кон remote репозиториумот
+git push origin branch1										ја испраќаме гранката branch1 кон remote репозиториумот
+git push origin branch2										ја испраќаме гранката branch2 кон remote репозиториумот
+git checkout branch1										се префрламе на гранката branch1
+git add shopping_list.txt									го додава shopping_list.txt во stage area
+git commit -m "Change quantity of item #5"							правиме commit со порака Change quantity of item #5
+git checkout master										се префрламе на гранката мастер
+git add shopping_list.txt									го додава shopping_list.txt во stage area
+git commit -m "Change quantity of item #2"							правиме commit со порака Change quantity of item #2
+git push origin master										ја испраќаме гранката мастер кон remote репозиториумот
+git push origin branch1										ја испраќаме гранката branch1 кон remote репозиториумот
+git push origin branch2										ја испраќаме гранката branch2 кон remote репозиториумот
+git checkout branch2										се префрламе на гранката branch2
+git add shopping_list.txt									го додава shopping_list.txt во stage area									
+git commit -m "Modify item #4"									правиме commit со порака Modify item #4
+
+$ git log											ги листаме сите извршени commit-и
+commit 047fb9adcf2010ded63da8c9b575f4c983268144 (HEAD -> branch2)
+Author: Nace Gjorgjievski <nace.gorgievski123@gmail.com>
+Date:   Sun Apr 10 10:57:37 2022 +0200
+
+    Modify item #4
+
+commit 545315841b6e5dc3973b9c5d08fa3b029978fa6d (origin/branch2)
+Author: Nace Gjorgjievski <nace.gorgievski123@gmail.com>
+Date:   Sun Apr 10 10:49:15 2022 +0200
+
+    Add quantities to the items
+
+commit d9d60cb22d88a8aca7c70e3f0bc1fe93d37a3e5b
+Author: Nace Gjorgjievski <nace.gorgievski123@gmail.com>
+Date:   Sun Apr 10 10:47:07 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit 34e28c0cd42147a071de359531e9da3a54675524
+Author: NaceGjorgjievski <86660866+NaceGjorgjievski@users.noreply.github.com>
+Date:   Sun Apr 10 10:40:19 2022 +0200
+
+    Update README.md
+
+git reset --soft HEAD^										ги враќа промените во staging area
+git add shopping_list.txt									го додава shopping_list.txt во stage area									
+git commit --amend -m "Modify item #4 and add item #6"						врши додавање на последниот commit и се додава нова порака Modify item #4 and add item #6
+
+$ git log											ги листаме сите извршени commit-и
+commit 63b8547e3f4b47ccbcdfa3ce5b3472f775ffe2a1 (HEAD -> branch2)
+Author: Nace Gjorgjievski <nace.gorgievski123@gmail.com>
+Date:   Sun Apr 10 10:49:15 2022 +0200
+
+    Modify item #4 and add item #6
+
+commit d9d60cb22d88a8aca7c70e3f0bc1fe93d37a3e5b
+Author: Nace Gjorgjievski <nace.gorgievski123@gmail.com>
+Date:   Sun Apr 10 10:47:07 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit 34e28c0cd42147a071de359531e9da3a54675524
+Author: NaceGjorgjievski <86660866+NaceGjorgjievski@users.noreply.github.com>
+Date:   Sun Apr 10 10:40:19 2022 +0200
+
+    Update README.md
+
+commit 4140f464bdcf8fdac18a5c267bf965338276f82f
+Author: NaceGjorgjievski <86660866+NaceGjorgjievski@users.noreply.github.com>
+Date:   Sun Apr 10 10:39:16 2022 +0200
+
+    Initial commit
+
+git checkout master									        се префрламе на гранката мастер
+git merge branch1										гранката мастер ја спојуваме со branch1, овде не настанува конфликт
+git merge branch2										гранката мастер ја спојуваме со branch2 , се појавува конфликт го решаваме со тоа што го отстрануваме текстот кој прави конфликт
+git add shopping_list.txt									
+git commit -m "Merging with branch2"
