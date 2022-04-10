@@ -3,3 +3,5 @@ Eggs x 7
 Milk x 3
 Soda x 4
 Chips x 6
+Pie x 8
+
