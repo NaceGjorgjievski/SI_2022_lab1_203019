@@ -1,5 +1,6 @@
-Bread
-Eggs
-Milk
-Soda
-Chips
+Bread x 1
+Eggs x 2
+Milk x 3
+Cake x 4
+Chips x 5
+Pie x 8
